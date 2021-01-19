@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="canonical" href="index.html" />
+      <link rel="stylesheet" href="assets/css/style.css">
+      <script src="assets/js/theme.min.js"></script>
+      <title>Concept Design</title>
+   </head>
+   <body>
+      <header class="site-header" uk-sticky>
+         <div class="header-container d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-start">
+               <a href="#" class="d-inline-block site-logo">
+               <img src="images/logo.PNG" alt="" uk-scrollspy="cls: uk-animation-fade; delay: 100; repeat: false">
+               </a>
+               <nav class="site-nav">
+                  <ul uk-scrollspy="cls: uk-animation-fade uk-animation-slide-right-small; target: >*; delay: 50; repeat: false">
+                     <li><a href="#">Life insurance</a></li>
+                     <li class="active"><a href="#">Why Us</a></li>
+                     <li><a href="#">Help</a></li>
+                     <li class="d-md-none"><a href="#">Log in</a></li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="actions" uk-scrollspy="cls: uk-animation-fade; target: >*; delay: 50; repeat: false">
+               <a href="#" class="log-in-btn d-none d-md-inline-block">Log in</a>
+               <a href="#modal-cta-clicked" class="btn btn-get-price text-uppercase position-relative" uk-toggle><span>Get my price</span></a>
+               <div class="nav-toggle d-md-none">
+                  <div class="nav-toggle-bar"></div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="container-fluid hero d-flex flex-wrap justify-content-center align-items-xl-center justify-content-xl-end flex-xl-nowrap position-relative">
+         <div class="hero-text" uk-scrollspy="cls: uk-animation-fade uk-animation-slide-bottom-small; target: >*; delay: 100; repeat: false">
+            <p class="orange-text text-uppercase">MEET US</p>
+            <h1 class="text-capitalize">A new kind of life insurance</h1>
+            <p>Secure your family's financial future, in as little as 10 minutes.</p>
+            <a href="#modal-cta-clicked" class="text-uppercase btn btn-hero orange-bg white-text d-inline-block position-relative" uk-toggle>Get my price</a>
+         </div>
+
+         <video width="320" height="240" autoplay muted poster="images/hero.png" class="mobl-video">
+            <source src="videos/header.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+         </video>
+         <video muted playsinline autoplay preload="auto" class="hero-video video-with-fallback">
+            <source src="videos/header.webm" type="video/webm">
+            <source src="videos/header.mp4" type="video/mp4">
+            <img class="position-relative" src="images/hero.png" alt="" title="Your browser does not support the <video> tag">
+         </video>
+         <picture>
+            <!-- <source srcset="images/converted/hero.webp" type="image/webp">
+            <source srcset="images/hero.png 1x, images/hero@2x.png 2x" type="image/png"> -->
+            <img uk-img class="position-relative image-fallback" data-src="/images/hero.png" srcset="/images/hero.png 1x, /images/hero@2x.png 2x" alt="" title="Your browser does not support the <video> tag" id="mbl-img">
+         </picture>
+      </section>
+      <section class="container-fluid more-affordable">
+         <div class="container px-0 d-flex flex-wrap-reverse justify-content-center align-items-xl-center justify-content-xl-between flex-xl-nowrap" uk-scrollspy="cls: uk-animation-fade uk-animation-slide-bottom-small; target: >*; delay: 100ms; repeat: false; offset-top: -100">
+            <div class="prices-wrapper">
+               <div class="prices-chart">
+                  <div class="row no-gutters">
+                     <video id="coverage" muted preload="auto" class="video-with-fallback">
+                        <source src="videos/coverage.webm" type="video/webm">
+                        <source src="videos/coverage.mp4" type="video/mp4">
+                        <img uk-img class="position-relative" data-src="/images/coverage.png" srcset="/images/coverage.png 1x, /images/coverage@2x.png 2x" alt="" title="Your browser does not support the <video> tag">
+                     </video>
+                     <picture>
+                        <!-- <source srcset="images/converted/coverage.webp" type="image/webp">
+                        <source srcset="images/coverage.png 1x, images/coverage@2x.png 2x" type="image/png"> -->
+                        <img uk-img class="position-relative image-fallback" data-src="/images/coverage.png" srcset="/images/coverage.png 1x, /images/coverage@2x.png 2x" alt="" title="Your browser does not support the <video> tag">
+                     </picture>
+                  </div>
+               </div>
+               <p class="disclaimer"><span class="orange-text">*</span>Data for illustrative purposes</p>
+            </div>
+            <div class="more-affordable-text">
+               <span class="text-uppercase">Secure your future</span>
+               <h2>It’s more affordable than you think</h2>
+               <p>Life insurance shouldn’t be confusing or expensive. Our term life insurance makes protecting your loved ones easy and affordable.</p>
+               <a class="btn-w-arrow" href="#modal-cta-clicked" uk-toggle>Get My Price</a>
+            </div>
+         </div>
+      </section>
+      <section class="get-help learning-center container-fluid">
+         <div class="container px-0 d-flex flex-wrap justify-content-center align-items-xl-center justify-content-xl-between flex-xl-nowrap">
+            <div class="learning-center-text" uk-scrollspy="cls: uk-animation-fade uk-animation-slide-bottom-small; target: >*; delay: 100; repeat: false; offset-top: -100">
+               <span class="text-uppercase">Technology meets service</span>
+               <h2>We're here to help</h2>
+               <p>Bella, our smart bot, can guide you to your perfect policy. There’s also human help whenever you need it.</p>
+               <a class="btn-w-arrow" href="#modal-cta-clicked" uk-toggle>Get help</a>
+            </div>
+            <div class="images position-relative">
+               <img class="position-absolute dots" src="images/dot.svg" alt="">
+               <!-- <picture>
+                  <source srcset="images/converted/get-help.webp" type="image/webp">
+                  <source srcset="images/get-help.png 1x, images/get-help@2x.png 2x" type="image/png">
+                  <img class="position-relative" src="images/get-help.png" alt="" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 100; repeat: false">
+               </picture> -->
+               <img class="position-relative" src="images/get-help.png" alt="" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 100; repeat: false">
+               <div class="speech-bubble position-absolute" uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-bottom-left; delay: 500; repeat: false">
+                  <p>There's also human help 👋</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="container-fluid gray-bg safe-hands position-relative">
+         <div class="container px-0 d-flex align-items-center justify-content-center flex-column position-relative" uk-scrollspy="cls: uk-animation-fade uk-animation-slide-bottom-small; target: >*; delay: 200; repeat: false; offset-top: -200">
+            <picture class="position-absolute text-center" id="umbrella">
+               <!-- <source srcset="images/converted/umbrella.webp" type="image/webp">
+               <source srcset="images/umbrella.png 1x, images/umbrella@2x.png 2x" type="image/png"> -->
+               <img src="images/umbrella.png" srcset="/images/umbrella.png 1x, /images/umbrella@2x.png 2x" alt="Umbrella">
+            </picture>            
+            <div class="safe-hands-text text-center position-relative w-100">
+               <span class="text-uppercase">Top-Rated Term Life Insurance</span>
+               <h2>You’re in safe hands</h2>
+               <p>We've partnered with, [insert underwriter], one of the world’s largest, most trusted insurance companies. This means we can ensure reliability in paying Claims.</p>
+            </div>
+            <div class="benefits-wrapper d-flex flex-wrap justify-content-center justify-content-md-around flex-xl-nowrap justify-content-xl-between align-items-xl-center w-100" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: >*; delay: 100; repeat: false; offset-top: -200">
+               <div class="benefit a-plus d-flex justify-content-start align-items-center flex-column text-center">
+                  <video id="top-rated" muted preload="auto" class="video-with-fallback">
+                     <source src="videos/top-rated.webm" type="video/webm">
+                     <source src="videos/top-rated.mp4" type="video/mp4">
+                     <img src="images/top-rated.png" srcset="/images/top-rated.png 1x, /images/top-rated@2x.png 2x" alt="The letter A followed by a plus sign" title="Your browser does not support the <video> tag">
+                  </video>
+                  <picture>
+                     <!-- <source srcset="images/converted/top-rated.webp" type="image/webp">
+                     <source srcset="images/top-rated.png 1x, images/top-rated@2x.png 2x" type="image/png"> -->
+                     <img uk-img class="position-relative image-fallback" data-src="/images/top-rated.png" srcset="/images/top-rated.png 1x, /images/top-rated@2x.png 2x" alt="The letter A followed by a plus sign" title="Your browser does not support the <video> tag">
+                  </picture>
+                  <h4>Top-Rated</h4>
+                  <p>A+ Financial Strength Rating by A.M. Best. <a style="font-style: italic; text-decoration: underline" href="#modal-top-rated" uk-toggle>What does this mean?</a></p>
+               </div>
+               <div class="benefit experience d-flex justify-content-start align-items-center flex-column text-center">
+                  <video id="experience" muted preload="auto" class="video-with-fallback">
+                     <source src="videos/experience.webm" type="video/webm">
+                     <source src="videos/experience.mp4" type="video/mp4">
+                     <img src="images/experience.png" srcset="/images/experience.png 1x, /images/experience@2x.png 2x" alt="Mother holding her daughter" title="Your browser does not support the <video> tag">
+                  </video>
+                  <picture>
+                     <source srcset="images/converted/experience.webp" type="image/webp">
+                     <source srcset="images/experience.png 1x, images/experience@2x.png 2x" type="image/png">
+                     <img uk-img class="position-relative image-fallback" data-src="/images/experience.png" srcset="/images/experience.png 1x, /images/experience@2x.png 2x" alt="" title="Your browser does not support the <video> tag">
+                  </picture>
+                  <h4>Expert guidance</h4>
+                  <p>We've placed millions of dollars in coverage people nationwide.</p>
+               </div>
+               <div class="benefit insurance d-flex justify-content-start align-items-center flex-column text-center mb-0">
+                  <video id="insurance" muted preload="auto" class="video-with-fallback">
+                     <source src="videos/insurance.webm" type="video/webm">
+                     <source src="videos/insurance.mp4" type="video/mp4">
+                     <img src="images/insurance.png" srcset="/images/insurance.png 1x, /images/insurance@2x.png 2x" alt="5 stars on a green background" title="Your browser does not support the <video> tag">
+                  </video>
+                  <picture>
+                     <source srcset="images/converted/insurance.webp" type="image/webp">
+                     <source srcset="images/insurance.png 1x, images/insurance@2x.png 2x" type="image/png">
+                     <img uk-img class="position-relative image-fallback" data-src="/images/insurance.png" srcset="/images/insurance.png 1x, /images/insurance@2x.png 2x" alt="5 stars on a green background" title="Your browser does not support the <video> tag">
+                  </picture>
+                  <h4>We care</h4>
+                  <p>We care about you. We’re a 5 star insurance company. Well… Close enough!</p>
+               </div>
+            </div>
+         </div>
+         <picture>
+            <!-- <source srcset="images/converted/dog.webp" type="image/webp">
+            <source srcset="images/dog.png 1x, images/dog@2x.png 2x" type="image/png"> -->
+            <img class="position-absolute d-block" id="dog" src="images/dog.png" srcset="/images/dog.png 1x, /images/dog@2x.png 2x" alt="">
+         </picture>
+      </section>
+      <section class="container-fluid dark-bg affordable-insurance">
+         <div class="container px-0">
+            <div class="upper-text" uk-scrollspy="cls: uk-animation-fade uk-animation-slide-bottom-small; target: >*; delay: 200; repeat: false; offset-top: -100">
+               <span class="text-uppercase">How it works</span>
+               <h2>Affordable life insurance in minutes</h2>
+               <p>We use technology to save you time and money – no pushy sales agents, paperwork, or extra fees. Just a few clicks and you’re done.</p>
+            </div>
+            <div class="steps position-relative d-flex flex-wrap align-items-center justify-content-center align-items-md-start justify-content-md-around flex-md-nowrap" uk-scrollspy="cls: uk-animation-fade uk-animation-slide-bottom-small; target: >div; delay: 500; repeat: false; offset-top: -200">
+               <span class="reveal" uk-scrollspy="cls: show; delay: 200; repeat: false; offset-top: -100">
+               <img class="" src="images/line.svg" alt="">
+               </span>
+               <span class="explosion" uk-scrollspy="cls: uk-animation-fade; delay: 2300; repeat: false; offset-top: -100">
+                  <picture>
+                     <!-- <source srcset="images/converted/confetti.webp" type="image/webp">
+                     <source srcset="images/confetti.png 1x, /images/confetti@2x.png 2x" type="image/png"> -->
+                     <img src="images/confetti.png" srcset="images/confetti.png 1x, /images/confetti@2x.png 2x" alt="" title="Your browser does not support the <video> tag">
+                  </picture>
+               </span>
+               <div class="step d-flex flex-column text-center">
+                  <span class="dot one"></span>
+                  <picture>
+                     <!-- <source srcset="images/converted/1.webp" type="image/webp">
+                     <source srcset="images/1.png 1x" type="image/png"> -->
+                     <img src="images/1.png" alt="">
+                  </picture>
+                  <h3>Get My Price</h3>
+                  <p>Choose the amount that you would like to be covered for and we’ll give you a quote.</p>
+               </div>
+               <div class="step d-flex flex-column text-center">
+                  <span class="dot two"></span>
+                  <picture>
+                     <!-- <source srcset="images/converted/2.webp" type="image/webp">
+                     <source srcset="images/2.png 1x" type="image/png"> -->
+                     <img src="images/2.png" alt="">
+                  </picture>
+                  <h3>Apply</h3>
+                  <p>Answer a few questions and get your final price.</p>
+               </div>
+               <div class="step d-flex flex-column text-center">
+                  <span class="dot three"></span>
+                  <picture>
+                     <!-- <source srcset="images/converted/3.webp" type="image/webp">
+                     <source srcset="images/3.png 1x" type="image/png"> -->
+                     <img src="images/3.png" alt="">
+                  </picture>
+                  <h3>You're Covered</h3>
+                  <p>Congratulations on securing your loved ones financial future!</p>
+               </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center button" uk-scrollspy="cls: uk-animation-fade uk-animation-slide-bottom-small; target: >*; delay: 500; repeat: false; offset-top: -200">
+               <a href="#modal-cta-clicked" class="text-uppercase btn btn-hero orange-bg white-text d-inline-block position-relative" uk-toggle>Get my price</a>
+            </div>
+         </div>
+      </section>
+      <section class="learning-center container-fluid">
+         <div class="container px-0 d-flex flex-wrap-reverse justify-content-center align-items-xl-center justify-content-xl-between flex-xl-nowrap">
+            <div class="images position-relative">
+               <img class="position-absolute dots" src="images/dot.svg" alt="">
+               <picture>
+                  <!-- <source srcset="images/converted/learning-center.webp" type="image/webp">
+                  <source srcset="images/learning-center.png 1x, images/learning-center@2x.png 2x" type="image/png"> -->
+                  <img class="position-relative" src="images/learning-center.png" srcset="images/learning-center@2x.png 2x" alt="" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 100; repeat: false">
+               </picture>
+               <div class="speech-bubble position-absolute" uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-bottom-left; delay: 500; repeat: false">
+                  <p>Nerd out in our Learning Center 🤓</p>
+               </div>
+            </div>
+            <div class="learning-center-text" uk-scrollspy="cls: uk-animation-fade uk-animation-slide-bottom-small; target: >*; delay: 100; repeat: false; offset-top: -100">
+               <span class="text-uppercase">You've Got This</span>
+               <h2>Everything you need—completely free</h2>
+               <p>Here’s the latest info, guides, and, helpful tools, from the Our team. Learn about life insurance, finances, health and wellness.</p>
+               <a href="#modal-cta-clicked" class="btn-w-arrow" uk-toggle>Visit Learning Center</a>
+            </div>
+         </div>
+      </section>
+      <section class="cards container px-0 d-none d-xl-flex align-items-center justify-content-between" uk-scrollspy="cls: uk-animation-fade uk-animation-slide-bottom-medium; target: >*; delay: 300; repeat: false; offset-top: -200">
+         <div class="col-4 card blue position-relative">
+            <h3>Calculator <br><br> </h3>
+            <p>How much life insurance do I need?</p>
+            <a class="position-absolute btn-w-arrow ltblue-arrow" href="#modal-cta-clicked" uk-toggle>Calculate Coverage</a>
+         </div>
+         <div class="col-4 card yellow position-relative">
+            <h3>Term vs. perm</h3>
+            <p>Term vs. whole life insurance. Which is best for you?</p>
+            <a class="position-absolute btn-w-arrow yellow-arrow" href="#modal-cta-clicked" uk-toggle>See the winner</a>
+         </div>
+         <div class="col-4 card red position-relative">
+            <h3>Pricing <br><br> </h3>
+            <p>How much does life insurance cost?</p>
+            <a class="position-absolute btn-w-arrow red-arrow" href="#modal-cta-clicked" uk-toggle>Tell Me More</a>
+         </div>
+         <div class="col-4 card green position-relative">
+            <h3>Insurance <br>101</h3>
+            <p>The ultimate guide to life insurance.</p>
+            <a class="position-absolute btn-w-arrow" href="#modal-cta-clicked" uk-toggle>Become an expert</a>
+         </div>
+      </section>
+      <section class="cards container-fluid px-0 d-xl-none" uk-scrollspy="cls: uk-animation-fade uk-animation-slide-bottom-medium; target: >*; delay: 300; repeat: false; offset-top: -200">
+         <div uk-slider="center:true">
+            <ul class="uk-slider-items uk-grid">
+               <li class="uk-width-auto uk-width-1-3@m">
+                  <div class="uk-panel">
+                     <div class="card blue position-relative d-flex flex-column align-items-start justify-content-between">
+                        <h3>Calculator</h3>
+                        <p>How much life insurance do I need?</p>
+                        <a class="position-relative btn-w-arrow ltblue-arrow" href="#">Calculate Coverage</a>
+                     </div>
+                  </div>
+               </li>
+               <li class="uk-width-auto uk-width-1-3@m">
+                  <div class="uk-panel">
+                     <div class="card yellow position-relative d-flex flex-column align-items-start justify-content-between">
+                        <h3>Term vs. perm</h3>
+                        <p>Term vs. whole life insurance. Which is best for you?</p>
+                        <a class="position-relative btn-w-arrow yellow-arrow" href="#">See the winner</a>
+                     </div>
+                  </div>
+               </li>
+               <li class="uk-width-auto uk-width-1-3@m">
+                  <div class="uk-panel">
+                     <div class="card red position-relative d-flex flex-column align-items-start justify-content-between">
+                        <h3>Pricing</h3>
+                        <p>How much does life insurance cost?</p>
+                        <a class="position-relative btn-w-arrow red-arrow" href="#">Tell Me More</a>
+                     </div>
+                  </div>
+               </li>
+               <li class="uk-width-auto uk-width-1-3@m">
+                  <div class="uk-panel">
+                     <div class="card green position-relative d-flex flex-column align-items-start justify-content-between">
+                        <h3>Insurance 101</h3>
+                        <p>The ultimate guide to life insurance.</p>
+                        <a class="position-relative btn-w-arrow" href="#">Become an expert</a>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin align-items-center"></ul>
+         </div>
+      </section>
+      <section class="container-fluid get-started">
+         <div class="container px-0 wrapper position-relative d-flex flex-column align-items-center">
+            <picture>
+               <!-- <source srcset="images/converted/man.webp" type="image/webp">
+               <source srcset="images/man.png 1x" type="image/png"> -->
+               <img class="man position-absolute d-none d-xl-block" src="images/man.png" alt="" uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 100; repeat: false; offset-top: -200">
+            </picture>
+            <div class="d-flex justify-content-center align-items-center flex-column text-center" uk-scrollspy="cls: uk-animation-fade uk-animation-slide-bottom-small; target: >*; delay: 200; repeat: false; offset-top: -200">
+               <h2>Get Started Today.</h2>
+               <p>Join Our community of people who are securing their financial future.</p>
+               <a href="#modal-cta-clicked" class="text-uppercase btn btn-hero orange-bg white-text d-inline-block position-relative" uk-toggle>Get my price</a>
+            </div>
+            <picture>
+               <!-- <source srcset="images/converted/boy.webp" type="image/webp">
+               <source srcset="images/boy.png 1x" type="image/png"> -->
+               <img class="boy position-absolute d-none d-xl-block" src="images/boy.png" alt="Boy holding a cup" uk-scrollspy="cls: uk-animation-slide-right-medium; delay: 100; repeat: false; offset-top: -200">
+            </picture>
+         </div>
+      </section>
+      <footer class="container-fluid">
+         <div class="container px-0">
+            <div class="row">
+               <div class="col-xl-4 company-info">
+                  <img class="footer-logo" src="images/logo.PNG" alt="">
+                  <p>We are a trading name of Our Insurance Services LLC. Our policies are issued by [Insert Underwriter here].</p>
+                  <div class="social d-xl-none">
+                     <a href="#"><img src="images/facebook.svg" alt=""></a>
+                     <a href="#"><img src="images/insta.svg" alt=""></a>
+                     <a href="#"><img src="images/youtube.svg" alt=""></a>
+                     <a href="#"><img src="images/linkedin.svg" alt=""></a>
+                     <a href="#"><img src="images/tiktok.svg" alt=""></a>
+                  </div>
+                  <form class="newsletter position-relative" action="#">
+                     <input type="email" placeholder="Your email address">
+                     <input type="submit" value="Go">
+                  </form>
+                  <div class="social d-none d-xl-block">
+                     <a href="#"><img src="images/facebook.svg" alt=""></a>
+                     <a href="#"><img src="images/insta.svg" alt=""></a>
+                     <a href="#"><img src="images/youtube.svg" alt=""></a>
+                     <a href="#"><img src="images/linkedin.svg" alt=""></a>
+                     <a href="#"><img src="images/tiktok.svg" alt=""></a>
+                  </div>
+               </div>
+               <div class="footer-navigation offset-xl-2 col-xl-6">
+                  <div class="d-flex justify-content-between align-items-top flex-wrap flex-sm-nowrap">
+                     <div class="resources-col">
+                        <h4 class="text-uppercase">Resources</h4>
+                        <ul>
+                           <li>Term life insurance plans</li>
+                           <li>Insurance calculator</li>
+                           <li>Guide to life insurance</li>
+                           <li>Contact</li>
+                           <li>FAQs</li>
+                        </ul>
+                     </div>
+                     <div class="magazine-col">
+                        <h4 class="text-uppercase">Magazine</h4>
+                        <ul>
+                           <li>Insurance</li>
+                           <li>Finances</li>
+                           <li>Health</li>
+                           <li>Updates</li>
+                        </ul>
+                     </div>
+                     <div class="more-col">
+                        <h4 class="text-uppercase">More</h4>
+                        <ul>
+                           <li>Claims</li>
+                           <li>Terms</li>
+                           <li>Privacy</li>
+                           <li>Licenses</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div class="container-fluid d-sm-none">
+         <a class="btn btn-get-price d-block text-uppercase text-center w-100" href="#modal-cta-clicked" uk-toggle><span>Get my price</span></a>
+      </div>
+      <div class="container-fluid gray-bg">
+         <div class="container px-0 d-flex align-items-center justify-content-center justify-content-sm-between copyright">
+            <p>© 2021. All right reserved.</p>
+            <a class="btn btn-get-price text-uppercase d-none d-sm-inline-block" href="#modal-cta-clicked" uk-toggle><span>Get my price</span></a>
+         </div>
+      </div>
+      <script src="scripts.min8de7.js?v=0.8.3"></script>
+      <div id="modal-top-rated" class="uk-flex-top" uk-modal>
+         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h2 class="text-center">Financial Strength</h2>
+            <p class="text-center">All our policies are written by [insert underwriter], who’s financial strength is A+ “superior,” according to independent ratings agency A.M. Best. <br><br><br>
+               Financial strength is an important when choosing a life insurance provider because it shows how well an insurer can pay claims.
+            </p>
+         </div>
+      </div>
+      <div id="modal-cta-clicked" class="uk-flex-top" uk-modal>
+         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h2 class="text-center">Lorem ipsum</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquam velit id aliquam porttitor. Etiam at sapien eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed gravida quam quis enim posuere, a posuere risus sollicitudin. Nunc in enim quis nisl faucibus auctor. Donec pretium aliquet condimentum. Vestibulum quis tempus odio. Pellentesque condimentum tellus sit amet augue rutrum, in fringilla lectus efficitur. Fusce pretium condimentum dui, sed dictum enim ultricies at. Sed commodo accumsan dui, eu suscipit orci auctor sit amet. Mauris quis accumsan est.</p>
+         </div>
+      </div>
+   </body>
+</html>
